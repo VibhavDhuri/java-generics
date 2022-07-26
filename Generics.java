@@ -1,7 +1,7 @@
 package javagenerics;
 
 public class Generics {
-	public static Integer compareTo(Integer num1, Integer num2, Integer num3) {
+	public static float compareTo(float num1, float num2, float num3) {
 
 		if (num1 > num2 && num1 > num3) {
 			return num1;
@@ -14,11 +14,9 @@ public class Generics {
 
 	public static void main(String[] args) {
 
-		Generics integer = new Generics();
-
-		System.out.println("1st test case max integer:" + integer.compareTo(5, 3, 2));
-		System.out.println("2nd test case max integer:" + integer.compareTo(2, 6, 3));
-		System.out.println("3rd test case max integer:" + integer.compareTo(1, 2, 3));
-
+		Generics number = new Generics();
+		System.out.println("1st test case max float:" + number.compareTo(4.1f, 0.6f, 1.2f));
+		System.out.println("2nd test case max float:" + number.compareTo(5.7f, 6.0f, 1.7f));
+		System.out.println("3rd test case max float:" + number.compareTo(4.1f, 2.1f, 5.2f));
 	}
 }
